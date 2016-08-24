@@ -144,6 +144,7 @@
 						<li class="am-dropdown-header"><span>本月有征文比赛，您可以参与。</span></li>
 						<li><span class="radio"><label>  <input type="radio" name="article" value="征文 | 如何应对地方补贴取消或退坡？" aria-label="...">征文 | 如何应对地方补贴取消或退坡？</label></span></li>
 						<li><span class="radio"><label>  <input type="radio" name="article" value="征文 | 谁说电动汽车不能远行？" aria-label="...">征文 | 谁说电动汽车不能远行？</label></span></li>
+						<li><span class="radio"><label>  <input type="radio" name="article" value="征文 | 大牛“百人会” 问政新能源" aria-label="...">征文 | 大牛“百人会” 问政新能源</label></span></li>
 						<li><span class="radio"><label>  <input type="radio" name="article" value="不参加" aria-label="...">不参加</label></span></li>
 						<li class="input--hover"><input type="submit" value="确定" style="width:100%; text-align: center;color:#5c5c5c;border:none;padding: 15px 0;font-size:16px;background: #fff;border-top:1px solid rgba(221, 221, 221, 0.21);" onclick="send('http://www.d1ev.com/member/articlenew/add.html',0)"></li>
 					</ul>
@@ -717,7 +718,10 @@
                 alertContent(msg.message);
             }
 			if(type == 0&&msg.state == 200){
-                window.open('http://www.d1ev.com/member/article/shenghe.html');
+                window.onbeforeunload = function(event) {
+                    return;
+                }
+                window.location = 'http://www.d1ev.com/member/article/shenghe.html';
                 
             }
 
@@ -735,7 +739,7 @@
 			return;
 		}
 		
-        send(address,1)
+        send(address,1);
 
     })
 	 function autosave(e){
