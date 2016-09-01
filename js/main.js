@@ -275,6 +275,7 @@
 	  //console.log($("#crop-avatar").find("img")[0])
 	  $("#crop-avatar").find("img")[0].setAttribute("style","display:block");
 	  $("#crop-avatar").find("img")[0].setAttribute("data-aid",data.aid);
+      $("#crop-avatar").find("img").siblings("p").text('');
 	  
       if ($.isPlainObject(data) && data.state === 200) {
         if (data.result) {

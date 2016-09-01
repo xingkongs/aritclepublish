@@ -10,7 +10,6 @@
 	position: relative;
 	cursor: pointer;
 	width:91.5%;
-
 	margin:0 auto;
 	color: #8c8c8c;
 	border:1px solid #cacaca;
@@ -27,3 +26,7 @@
 	pointer-events:none;
 }
 .sidebar-module{position:relative;}
+.wangeditor-menu-img-trash-o{
+	color: red;
+	font-size: 18px;
+}

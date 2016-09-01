@@ -7938,7 +7938,7 @@ _e(function (E, $) {
             // --- 定位 toolbar ---
 
             // 计算初步结果
-            var top = imgTop + imgHeight;
+            var top = imgTop ;
             var left = imgLeft;
             var marginLeft = 0;
 

@@ -89,23 +89,28 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">			
                 <li class="dropdown open">
-                    <a href="#" class="dropdown-toggle dropdown--re" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">投稿须知 <span class="glyphicon glyphicon-menu-down" style="font-size:12px"></span></a>
+                    <a href="#" class="dropdown-toggle dropdown--re" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">使用帮助 <span class="glyphicon glyphicon-menu-down" style="font-size:12px"></span></a>
                     <ul class="dropdown-menu dropdown-menu--re">
-                        <li><p>1、欢迎与新能源汽车行业、话题、公司有关的稿件，购买、 使用新能源汽车的稿件、内容题材不限，言之有物，语言通顺 <br>
-                            2、每月对优秀稿件给予稿费激励<br>
-                            3、欢迎首发和原创，谢绝转载<br>
-                            4、文中有关键事实、数据、图表等是引用其他媒体或作者的内容，请注明来源<br>
-                            5、软文、枪文，敬请绕道，抄袭盗稿零容忍，一经发现立即封号，并由作者本人承担法律责任<br>
-                            6、投稿过程中遇到操作问题，请联系：yxh@d1ev.com, nanmeng@d1ev.com<br>
-                        </p></li>
-
-
-
+                   <li>
+						<p style="color:#4c4c4c;font-size:16px;">关于投稿</p>
+						<p>1、欢迎与新能源汽车行业、话题、公司有关的稿件，购买、 使用新能源汽车的稿件、内容题材不限，言之有物，语言通顺 </p>
+						<p>2、每月对优秀稿件给予稿费激励</p>
+						<p>3、欢迎首发和原创，谢绝转载</p>
+						<p>4、文中有关键事实、数据、图表等是引用其他媒体或作者的内容，请注明来源</p>
+						<p>5、软文、枪文，敬请绕道，抄袭盗稿零容忍，一经发现立即封号，并由作者本人承担法律责任</p>
+						<br>
+						<p style="color:#4c4c4c;font-size:16px;">关于编辑器的使用</p>
+						<p>1、请勿使用外链图片，正文插图请本地上传</p>
+						<p>2、支持5M以内图片上传，如图片太大，请压缩后再上传</p>
+						<p>3、支持多图上传（部分IE浏览器不可用）</p> 
+						<br>
+						<p>投稿过程中遇到操作问题，请联系：yxh@d1ev.com, nanmeng@d1ev.com</p>
+					</li>
                     </ul>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-				<li id="prompt" style="width: 336px;margin-right:10px;line-height: 26px;text-align: center;color:#808080;z-index:10000;position:relative;top:-6px;">
+				<li id="prompt" style="width: 336px;margin-right:10px;line-height: 26px;text-align: center;color:#808080;z-index:10000;position:relative;top:-11px;">
 					<div class="alert-danger alert  alert-dismissible" role="alert" >
 					  					   
 					</div>
@@ -115,9 +120,10 @@
                 <li class="dropdown--article dropdown--hover"><a href="javascript:;" id="dropdownMenu1">提交审核 <span class="glyphicon glyphicon-menu-down" style="font-size:12px"></span></a>
 					<ul class="dropdown-menu dropdown-menu--join" style="display:none;width: 410px; padding-bottom: 0px; top: 39px; border: none; box-shadow: rgba(0, 0, 0, 0.172549) 0px 0px 12px;">
 						<li class="am-dropdown-header"><span>本月有征文比赛，您可以参与。</span></li>
+						<li><span class="radio"><label>  <input type="radio" name="article" value="征文 | 大牛“百人会” 问政新能源" aria-label="...">征文 | 大牛“百人会” 问政新能源</label></span></li>						
 						<li><span class="radio"><label>  <input type="radio" name="article" value="征文 | 如何应对地方补贴取消或退坡？" aria-label="...">征文 | 如何应对地方补贴取消或退坡？</label></span></li>
 						<li><span class="radio"><label>  <input type="radio" name="article" value="征文 | 谁说电动汽车不能远行？" aria-label="...">征文 | 谁说电动汽车不能远行？</label></span></li>
-												<li><span class="radio"><label>  <input type="radio" name="article" value="不参加" aria-label="...">不参加</label></span></li>
+						<li><span class="radio"><label>  <input type="radio" name="article" value="不参加" aria-label="...">不参加</label></span></li>
 						<li class="input--hover"><input type="submit" value="确定" style="width:100%; text-align: center;color:#5c5c5c;border:none;padding: 15px 0;font-size:16px;background: #fff;border-top:1px solid rgba(221, 221, 221, 0.21);" onclick="send('http://www.d1ev.com/member/articlenew/add.html',0)"></li>
 					</ul>
                 </li>
@@ -241,7 +247,7 @@
                                 
 								<div id="uploader" class="wu-example--re" style="min-height:380px;">
                                     <div id="upload">
-                                        <div id="filePicker" class="webuploader-container"><div class="webuploader-pick"><span class="iconfont icon-fill108"></span> 上传图片</div><div id="rt_rt_1anmbslba177a1pb1qu411i7106n1" style="position: absolute; top: 0px; left: 11.1563px; width: 240px; height: 46px; overflow: hidden; bottom: auto; right: auto;"><input id="file" onmouseover="this.title='请上传5M以内图片'" type="file" name="file" style="padding:10px;opacity: 0;cursor: pointer;" multiple="multiple" accept="image/*" title=""><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div></div>
+                                        <div id="filePicker" class="webuploader-container"><div class="webuploader-pick"><span class="iconfont icon-fill108"></span> 上传图片</div><div id="rt_rt_1anmbslba177a1pb1qu411i7106n1" style="position: absolute; top: 0px; left: 11.1563px; width: 240px; height: 46px; overflow: hidden; bottom: auto; right: auto;"><input id="file" type="file" name="file" style="padding:10px;opacity: 0;cursor: pointer;" multiple="multiple" accept="image/*" title="上传图片"><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div></div>
                                         <!--<input type="file" id="file" multiple="multiple" accept="image/gif, image/jpeg, image/x-png">-->
                                         <div class="statusBar" style="display: block!important;">
                                             <div class="progress" style="display:none;">
@@ -264,6 +270,7 @@
                         </div>
                     </div>
                 </div>
+				<div id="ppreview"><img src="" alt=""></div>
             </div>
 
         </div><!-- /.blog-sidebar -->
@@ -396,6 +403,17 @@
         //标题内容变化
 		timeauto();
 		//autosave(initcontent);
+		var i=$("#head").val().length;
+		if(i){$("#inputnum").text(i+"/30");
+		$(this).css("padding-right","60px")
+		} else {
+			$("#inputnum").text("")
+		}
+		
+		window.onbeforeunload = function(event) {
+    
+        event.returnValue="已自动保存"+datae+"时的内容";
+    }
     })
     editor.create();
 	
@@ -431,11 +449,15 @@
 //			$(this).closest(".container--re").find(".avatar-view img").css("display","block")
 //		})
 	//悬浮 图片上 显示删除icon
-    $("#wrapper").on("mouseenter","li",function(){
-
+    $("#wrapper").on("mouseenter","li",function(e){
+        var href=$(this).find("img").attr("src");
         $lis=$(this)
         $btn=$lis.find(".file-panel")
         $btn.stop().animate({height: 30});
+		var xOffset = 30;
+		var yOffset = 30;
+		$("#ppreview").css("top","0").css("right","270px").fadeIn("fast").find("img").attr("src",href);
+		console.log(e);
 		
     })
 
@@ -444,6 +466,7 @@
         $lis=$(this)
         $btn=$lis.find(".file-panel")
         $btn.stop().animate({height: 0});
+		$("#ppreview").css("display","none");
 		
 
     })
@@ -451,6 +474,14 @@
 	$("#upload").on("click","li .file-panel span",function(){
 		$(this).closest("li").remove();
 	})
+	//点击上传按钮 弹出提示框
+	$(function() {
+	  $('#filePicker').popover({
+		content: '上传正文插图，支持5M以内图片，支持多图上传（非IE浏览器）',
+		trigger:'hover focus',
+		placement:'top'
+	  })
+	});
 
 
 </script>
@@ -465,12 +496,75 @@
 
 <script src="{$daniusaynew_staticDir}js/main.js"></script>
 
-
+<!--[if !IE]><!-->
 <script type="text/javascript" src="{$daniusaynew_staticDir}/js/ajaxfileupload.js"></script>
+<!--<![endif]-->
 
+<!--[if lte IE 9]>
+<script src="{$daniusaynew_staticDir}external/js/form.js"></script>
+<script>
+	$(function () {
+            $('#file').change(function () {
+				
+            var options = {
+                url: '/attachment/attachments/imgUp.html',
+                type: 'post',
+                dataType: 'text',
+				progress: function(event){
+					progress(event)
+				},
+                success: function (data) {
+                    if (data.length > 0)
+						console.log(data)
+                        uploadSuccess(data)
+                }
+				
+            };
+            $("#formFile").ajaxSubmit(options)
+            
+        
+            
+            });
+        })
+			
+        function uploadSuccess(res) {
+			
+               res = eval('(' + res + ')');
+			   
+            if(res.error == 0) {
+				var $img=$("<img src="+ res['url'] +" data-aid="+ res['aid'] +">")
+                var $li = $( '<li class="img-item">' +
+                '<p class="imgWrap"></p>'+
+                
+                '</li>' ),
+				$btns = $('<div class="file-panel">' + '<span class="cancel">删除</span>').appendTo( $li )
+				$img.appendTo($li.find( 'p.imgWrap' ))
+                $li.appendTo($("#wrapper"));
+				console.log($("#wrapper"))
+            }
+        }
+		    var progress = function(event) {
+            var loaded = event.loaded;                  //已经上传大小情况 
+            var tot = event.total;                      //附件总大小 
+            var per = Math.floor(100*loaded/tot);     //百分比
+			$("#progress-wrap").closest(".progress").css("display","block")
+            $("#progress-wrap").css("width",per+"%").text( per +"%" );
+            //$("#progress-wrap").css("width" , per +"%");
+			var num=$("#progress-wrap").text();
+            setTimeout(function () {
+                if (per === 100) {
+                    $("#progress-wrap").closest(".progress").css("display", "none")
+                }
+            }, 1500);
+			
+			
+			
+        }
+</script>
+<![endif]-->
 
 <script src="{$daniusaynew_staticDir}js/global.js"></script>
-
+<script src="{$daniusaynew_staticDir}js/preview.js"></script>
 <script>
 	// 上传图片 滚动监听
         if ($("#articlePicGroup").length > 0) {

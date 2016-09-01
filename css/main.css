@@ -216,7 +216,7 @@ body{
 .am-btn-default--re{
   background: #fff;}
 
-.navbar-default .navbar-nav>li.dropdown--hover>a{color:#ff6600;font-size:16px;}
+.navbar-default .navbar-nav>li.dropdown--hover>a{color:#ff6600;font-size:14px;}
 .navbar-default .navbar-nav>li.dropdown--hover:hover>a{color:#ff8432}
 .navbar-default .navbar-nav>li.dropdown--hover:focus>a{color:#ff6600;}
 .navbar-default li.bg-warning>a{color:#fff;}
@@ -243,13 +243,16 @@ body{
 .dropdown-menu--join> li > a:hover span{
   color:#f60;
 }
-.navbar-nav>li>.dropdown-menu--re{
-  width: 470px;
-  color:#808080;
-  font-size:12px;
-  padding: 15px 15px 5px;
+.navbar-nav>li>.dropdown-menu--re {
+  width: 646px;
+  color: #808080;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 28px 28px 44px;
   background: #fefefe;
-
+}
+.navbar-nav>li>.dropdown-menu--re p{
+  margin:0;
 }
 
 .dropdown-menu > li.dropdown-menu--join > span{
@@ -281,7 +284,7 @@ body{
 .avatar-view{
   height:170px;
   background: url(http://www.d1ev.com/statics/extres/daniusaynew/images/Bitmap.png) center #fff no-repeat;
-  font-size:16px;
+  font-size:14px;
   color:#666;
   position:relative;
   text-align:center;
