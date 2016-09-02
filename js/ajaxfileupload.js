@@ -22,7 +22,7 @@
             if(f.value) {
                 var fileList = f.files;
                 var flag = 0;
-				console.log(fileList)
+				console.log(fileList);
 				
                 for(var i = 0 ; i < fileList.length; i++) {
                     var fileName = fileList[i].name;
@@ -77,24 +77,28 @@
     //-----------------demo-----------------------//
     var $file = $('#file');
     $file.change(function(evt) {
-        var allowType = ['jpg', 'png', 'jpeg', 'gif']
-        if(!funcTool.checkFileType($file[0], allowType)) {
-            alert('文件类型不对！');
-            return;
-        }
+        // var allowType = ['jpg', 'png', 'jpeg', 'gif'];
+        // console.log($file[0]);
+        // if(!funcTool.checkFileType($file[0], allowType)) {
+        //     alert('文件类型不对！');
+        //     return;
+        // }
 
 		
         var success = function(res) {
             res = eval('(' + res + ')');
             if(res.error == 0) {
-				var $img=$("<img src="+ res['url'] +" data-aid="+ res['aid'] +">")
+				var $img=$("<img src="+ res['url'] +" data-aid="+ res['aid'] +">");
                 var $li = $( '<li class="img-item">' +
                 '<p class="imgWrap"></p>'+
                 
                 '</li>' ),
-				$btns = $('<div class="file-panel">' + '<span class="cancel">删除</span>').appendTo( $li )
-				$img.appendTo($li.find( 'p.imgWrap' ))
+				$btns = $('<div class="file-panel">' + '<span class="cancel">删除</span>').appendTo( $li );
+				$img.appendTo($li.find( 'p.imgWrap' ));
                 $li.appendTo($("#wrapper"));
+            }
+            if(res.error==1){
+                alert(res.message);
             }
         };
 
@@ -102,13 +106,13 @@
             var loaded = event.loaded;                  //已经上传大小情况 
             var tot = event.total;                      //附件总大小 
             var per = Math.floor(100*loaded/tot);     //百分比
-			$("#progress-wrap").closest(".progress").css("display","block")
+			$("#progress-wrap").closest(".progress").css("display","block");
             $("#progress-wrap").css("width",per+"%").text( per +"%" );
             //$("#progress-wrap").css("width" , per +"%");
 			var num=$("#progress-wrap").text();
             setTimeout(function () {
                 if (per === 100) {
-                    $("#progress-wrap").closest(".progress").css("display", "none")
+                    $("#progress-wrap").closest(".progress").css("display", "none");
                 }
             }, 1500);
 			
