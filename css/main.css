@@ -323,3 +323,9 @@ body{
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 .txt-toolbar input[type=text]:focus, .wangEditor-drop-panel input[type=text]:focus{border:1px solid #ccc;}	
 }
+.upload--position{
+  position:fixed!important;
+  top:72px;
+  min-width:260px;
+  background: #fff;
+}

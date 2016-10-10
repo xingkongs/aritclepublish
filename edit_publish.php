@@ -247,7 +247,7 @@
                                 
 								<div id="uploader" class="wu-example--re" style="min-height:380px;">
                                     <div id="upload">
-                                        <div id="filePicker" class="webuploader-container"><div class="webuploader-pick"><span class="iconfont icon-fill108"></span> 上传图片</div><div id="rt_rt_1anmbslba177a1pb1qu411i7106n1" style="position: absolute; top: 0px; left: 11.1563px; width: 240px; height: 46px; overflow: hidden; bottom: auto; right: auto;"><input id="file" type="file" name="file" style="padding:10px;opacity: 0;cursor: pointer;" multiple="multiple" accept="image/*" title="上传图片"><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div></div>
+                                        <div id="filePicker" data-toggle="tooltip" data-placement="bottom" title="上传正文插图，支持5M以内图片，支持多图上传（非IE浏览器）" class="webuploader-container"><div class="webuploader-pick"><span class="iconfont icon-fill108"></span> 上传图片</div><div id="rt_rt_1anmbslba177a1pb1qu411i7106n1" style="position: absolute; top: 0px; left: 11.1563px; width: 240px; height: 46px; overflow: hidden; bottom: auto; right: auto;"><input id="file" type="file" name="file" style="padding:10px;opacity: 0;cursor: pointer;" multiple="multiple" title="上传图片"><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div></div>
                                         <!--<input type="file" id="file" multiple="multiple" accept="image/gif, image/jpeg, image/x-png">-->
                                         <div class="statusBar" style="display: block!important;">
                                             <div class="progress" style="display:none;">
@@ -456,10 +456,10 @@
         $btn.stop().animate({height: 30});
 		var xOffset = 30;
 		var yOffset = 30;
-		$("#ppreview").css("top","0").css("right","270px").fadeIn("fast").find("img").attr("src",href);
+		$("#ppreview").css("top","170px").css("right","38%").fadeIn("fast").find("img").attr("src",href);
 		console.log(e);
 		
-    })
+    });
 
     $("#wrapper").on("mouseleave","li",function(){
 
@@ -473,15 +473,13 @@
 	//点击删除icon 删除图片
 	$("#upload").on("click","li .file-panel span",function(){
 		$(this).closest("li").remove();
+		$("#ppreview").fadeOut("fast");
 	})
 	//点击上传按钮 弹出提示框
-	$(function() {
-	  $('#filePicker').popover({
-		content: '上传正文插图，支持5M以内图片，支持多图上传（非IE浏览器）',
-		trigger:'hover focus',
-		placement:'top'
-	  })
-	});
+$(function () {
+  $('#filePicker').tooltip({trigger:"hover"})
+})
+
 
 
 </script>
@@ -564,32 +562,25 @@
 <![endif]-->
 
 <script src="{$daniusaynew_staticDir}js/global.js"></script>
-<script src="{$daniusaynew_staticDir}js/preview.js"></script>
 <script>
 	// 上传图片 滚动监听
         if ($("#articlePicGroup").length > 0) {
             var a = $("#articlePicGroup")
                     , b = a.offset().top - 90;
 
-            checkShow()
-
+            
         }
 
-		
+		checkShow()
+
         function checkShow(){
             $(window).scroll(function(){
                 $("body").css("margin-top","0")
                 if ($(window).scrollTop() > b) {
                     var c = $(window).scrollTop() - b + "px";
-
-
-                    a.stop().css({
-                        top: c
-                    })
+                    a.find(".about").addClass("upload--position");
                 } else
-                    a.stop().css({
-                        top: 0
-                    })
+                    a.find(".about").removeClass("upload--position");
             })
         }
     //点击图片 添加到编辑器

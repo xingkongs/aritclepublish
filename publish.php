@@ -276,7 +276,7 @@
 								
                                     <div id="upload">
 										<form id='formFile' name='formFile' method='post' enctype='multipart/form-data'>
-											<div id="filePicker" data-toggle="tooltip" data-placement="bottom" title="上传正文插图，支持5M以内图片，支持多图上传（非IE浏览器）" class="webuploader-container"><div class="webuploader-pick"><span class="iconfont icon-fill108"></span> 上传图片</div><div id="rt_rt_1anmbslba177a1pb1qu411i7106n1" style="position: absolute; top: 0px; left: 11.1563px; width: 240px; height: 46px; overflow: hidden; bottom: auto; right: auto;"><input id="file" type="file" name="file" style="padding:10px;opacity: 0;filter:alpha(opacity=0);cursor: pointer;z-index:2;" multiple="multiple" accept="image/*" title="上传图片"><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div></div>
+											<div id="filePicker" data-toggle="tooltip" data-placement="bottom" title="上传正文插图，支持5M以内图片，支持多图上传（非IE浏览器）" class="webuploader-container"><div class="webuploader-pick"><span class="iconfont icon-fill108"></span> 上传图片</div><div id="rt_rt_1anmbslba177a1pb1qu411i7106n1" style="position: absolute; top: 0px; left: 11.1563px; width: 240px; height: 46px; overflow: hidden; bottom: auto; right: auto;"><input id="file" type="file" name="file" style="padding:10px;opacity: 0;filter:alpha(opacity=0);cursor: pointer;z-index:2;" multiple="multiple" title="上传图片"><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div></div>
 										<form>  
                                         <div class="statusBar" style="display: block!important;">
                                             <div class="progress" style="display:none;">
@@ -485,7 +485,7 @@
         $btn.stop().animate({height: 30});
 		var xOffset = 30;
 		var yOffset = 30;
-		$("#ppreview").css("top","0").css("right","270px").fadeIn("fast").find("img").attr("src",href);
+		$("#ppreview").css("top","170px").css("right","38%").fadeIn("fast").find("img").attr("src",href);
 		console.log(e);
 		
     })
@@ -502,18 +502,11 @@
 	//点击删除icon 删除图片
 	$("#upload").on("click","li .file-panel span",function(){
 		$(this).closest("li").remove();
+		$("#ppreview").fadeOut("fast");
 	})
-	//点击上传按钮 弹出提示框
-	//$(function() {
-	//  $('#filePicker').popover({
-	//	content: '上传正文插图，支持5M以内图片，支持多图上传（非IE浏览器）',
-	//	trigger:'hover focus',
-	//	theme:'sm',
-	//	placement:'top'
-	 // })
-	//});
+		//点击上传按钮 弹出提示框
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+  $('#filePicker').tooltip({trigger:"hover"})
 })
 
 
@@ -605,25 +598,19 @@ $(function () {
             var a = $("#articlePicGroup")
                     , b = a.offset().top - 90;
 
-            checkShow()
-
+            
         }
 
-		
+		checkShow()
+
         function checkShow(){
             $(window).scroll(function(){
                 $("body").css("margin-top","0")
                 if ($(window).scrollTop() > b) {
                     var c = $(window).scrollTop() - b + "px";
-
-
-                    a.stop().css({
-                        top: c
-                    })
+                    a.find(".about").addClass("upload--position");
                 } else
-                    a.stop().css({
-                        top: 0
-                    })
+                    a.find(".about").removeClass("upload--position");
             })
         }
     //点击图片 添加到编辑器
