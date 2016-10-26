@@ -1,20 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>大牛说 投稿</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>大牛说_投稿</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="{$daniusaynew_staticDir}external/css/bootstrap.min.css">
     <!--<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
     <link rel="stylesheet" href="{$daniusaynew_staticDir}external/css/cropper.min.css">
-
-
     <link rel="stylesheet" href="{$daniusaynew_staticDir}external/css/wangEditor.min.css">
     <link rel="stylesheet" type="text/css" href="{$daniusaynew_staticDir}external/css/webuploader.css">
     <link rel="stylesheet" type="text/css" href="{$daniusaynew_staticDir}css/uploadpic2.css">
@@ -22,8 +18,8 @@
     <link rel="stylesheet" href="{$daniusaynew_staticDir}icons/iconfont.css">
     <link rel="stylesheet" href="{$daniusaynew_staticDir}external/js/perfect-scrollbar.min.css">
     <link href="{$daniusaynew_staticDir}external/css/prettify.css" rel="stylesheet">
-	<link href="http://at.alicdn.com/t/font_1468891910_6327245.css" rel="stylesheet">
-	<link rel="stylesheet" href="{$daniusaynew_staticDir}css/main.css">
+    <link href="http://at.alicdn.com/t/font_1468891910_6327245.css" rel="stylesheet">
+    <link rel="stylesheet" href="{$daniusaynew_staticDir}css/main.css">
 	
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -147,9 +143,7 @@
                 <li class="dropdown--article dropdown--hover"><a href="javascript:;" id="dropdownMenu1">提交审核 <span class="glyphicon glyphicon-menu-down" style="font-size:12px"></span></a>
 					<ul class="dropdown-menu dropdown-menu--join" style="display:none;width:410px;padding-bottom:0;top:39px;border: none;box-shadow: 0 0px 12px rgba(0,0,0,.175);">
 						<li class="am-dropdown-header"><span>本月有征文比赛，您可以参与。</span></li>
-						<li><span class="radio"><label>  <input type="radio" name="article" value="征文 | 大牛“百人会” 问政新能源" aria-label="...">征文 | 大牛“百人会” 问政新能源</label></span></li>
-						<li><span class="radio"><label>  <input type="radio" name="article" value="征文 | 如何应对地方补贴取消或退坡？" aria-label="...">征文 | 如何应对地方补贴取消或退坡？</label></span></li>
-						<li><span class="radio"><label>  <input type="radio" name="article" value="征文 | 谁说电动汽车不能远行？" aria-label="...">征文 | 谁说电动汽车不能远行？</label></span></li>
+						<li><span class="radio"><label>  <input type="radio" name="article" value="征文 | 国庆七天乐 电动出行最快乐" aria-label="...">征文 | 国庆七天乐 电动出行最快乐</label></span></li>
 						<li><span class="radio"><label>  <input type="radio" name="article" value="不参加" aria-label="...">不参加</label></span></li>
 						<li class="input--hover"><input type="submit" value="确定" style="width:100%; text-align: center;color:#5c5c5c;border:none;padding: 15px 0;font-size:16px;background: #fff;border-top:1px solid rgba(221, 221, 221, 0.21);" onclick="send('http://www.d1ev.com/member/articlenew/add.html',0)"></li>
 					</ul>
@@ -485,8 +479,8 @@
         $btn.stop().animate({height: 30});
 		var xOffset = 30;
 		var yOffset = 30;
-		$("#ppreview").css("top","170px").css("right","38%").fadeIn("fast").find("img").attr("src",href);
-		console.log(e);
+		$("#ppreview").addClass("active").find("img").attr("src",href);
+		//console.log(e);
 		
     })
 
@@ -495,9 +489,7 @@
         $lis=$(this)
         $btn=$lis.find(".file-panel")
         $btn.stop().animate({height: 0});
-		$("#ppreview").css("display","none");
-		
-
+		$("#ppreview").removeClass("active")
     })
 	//点击删除icon 删除图片
 	$("#upload").on("click","li .file-panel span",function(){
@@ -821,6 +813,7 @@ $(function () {
 
 
 </script>
-
+<!--统计代码-->
+<div style="display:none"><script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?c1d54a092f01be0215b4487856c2c6f6";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script><script type="text/javascript">var cnzz_protocol=(("https:"==document.location.protocol)?" https://":" http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_2469655'%3E%3C/span%3E%3Cscript src='"+cnzz_protocol+"s13.cnzz.com/stat.php%3Fid%3D2469655' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">var cnzz_protocol=(("https:"==document.location.protocol)?" https://":" http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254528018'%3E%3C/span%3E%3Cscript src='"+cnzz_protocol+"s95.cnzz.com/stat.php%3Fid%3D1254528018' type='text/javascript'%3E%3C/script%3E"));</script></div>
 </body>
 </html>

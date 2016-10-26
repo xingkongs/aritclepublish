@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c938f95f-307c-48be-ad20-d6c092a872ae" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/uploadpic2.css" afterPath="$PROJECT_DIR$/css/uploadpic2.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_publish.php" afterPath="$PROJECT_DIR$/edit_publish.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/publish.php" afterPath="$PROJECT_DIR$/publish.php" />
     </list>
@@ -29,7 +29,7 @@
       <file leaf-file-name="ajaxfileupload.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/ajaxfileupload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-519">
+            <state relative-caret-position="2132">
               <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
               <folding />
             </state>
@@ -39,8 +39,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7618">
-              <caret line="293" column="17" selection-start-line="293" selection-start-column="17" selection-end-line="293" selection-end-column="17" />
+            <state relative-caret-position="530">
+              <caret line="304" column="16" selection-start-line="304" selection-start-column="16" selection-end-line="304" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -49,9 +49,43 @@
       <file leaf-file-name="daniusay.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daniusay.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8502">
-              <caret line="327" column="9" selection-start-line="327" selection-start-column="9" selection-end-line="327" selection-end-column="9" />
+            <state relative-caret-position="7592">
+              <caret line="292" column="27" selection-start-line="292" selection-start-column="27" selection-end-line="292" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit_publish.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edit_publish.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="publish.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/publish.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19318">
+              <caret line="743" column="0" selection-start-line="743" selection-start-column="0" selection-end-line="743" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dd.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dd.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13208">
+              <caret line="508" column="34" selection-start-line="508" selection-start-column="34" selection-end-line="508" selection-end-column="34" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1472462947966" expanded="true" signature="2368:2584" ph="..." />
+                <marker date="1472462947966" expanded="true" signature="26510:26525" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,7 +93,7 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
+            <state relative-caret-position="8580">
               <caret line="330" column="1" selection-start-line="330" selection-start-column="1" selection-end-line="330" selection-end-column="1" />
               <folding />
             </state>
@@ -79,8 +113,8 @@
       <file leaf-file-name="uploadpic2.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/uploadpic2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            <state relative-caret-position="17550">
+              <caret line="675" column="23" selection-start-line="675" selection-start-column="23" selection-end-line="675" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -128,7 +162,6 @@
         <option value="$PROJECT_DIR$/external/js/form.js" />
         <option value="$PROJECT_DIR$/js/uploadpic2.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/css/uploadpic2.css" />
         <option value="$PROJECT_DIR$/external/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/external/js/wangEditor.js" />
         <option value="$PROJECT_DIR$/dd.html" />
@@ -137,6 +170,7 @@
         <option value="$PROJECT_DIR$/js/ajaxfileupload.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/changepic.css" />
+        <option value="$PROJECT_DIR$/css/uploadpic2.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
@@ -179,7 +213,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -284,6 +317,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -450,7 +484,14 @@
       <workItem from="1472817313748" duration="376000" />
       <workItem from="1473059825017" duration="2302000" />
       <workItem from="1475980410371" duration="821000" />
-      <workItem from="1476093057998" duration="54000" />
+      <workItem from="1476093057998" duration="121000" />
+      <workItem from="1476408984566" duration="141000" />
+      <workItem from="1476413129983" duration="10000" />
+      <workItem from="1477366541634" duration="191000" />
+      <workItem from="1477366894994" duration="20000" />
+      <workItem from="1477450852912" duration="120000" />
+      <workItem from="1477450988214" duration="6007000" />
+      <workItem from="1477466732348" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="change head padding-left bug">
       <created>1472014698616</created>
@@ -473,18 +514,25 @@
       <option name="project" value="LOCAL" />
       <updated>1472817666736</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change main.css and style.css to change reviewpic modle and download page php">
+      <created>1476093165252</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1476093165252</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262508000" />
+    <option name="totallyTimeSpent" value="269069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2615716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2981701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -517,7 +565,8 @@
     <MESSAGE value="change head padding-left bug" />
     <MESSAGE value="change picture upload model  add preview model  delete preview  js" />
     <MESSAGE value="change fileupload model  remove image file type alert" />
-    <option name="LAST_COMMIT_MESSAGE" value="change fileupload model  remove image file type alert" />
+    <MESSAGE value="change main.css and style.css to change reviewpic modle and download page php" />
+    <option name="LAST_COMMIT_MESSAGE" value="change main.css and style.css to change reviewpic modle and download page php" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -526,13 +575,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/typescriptCompiler/external/lib.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="7449" column="4" selection-start-line="7449" selection-start-column="4" selection-end-line="7449" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://G:/TDdownload/jquery-sbjgxf-sltxsdt(jb51.net)/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -599,13 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16146">
           <caret line="621" column="26" selection-start-line="621" selection-start-column="26" selection-end-line="621" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/publish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1456">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -820,21 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14560">
-          <caret line="560" column="0" selection-start-line="560" selection-start-column="0" selection-end-line="560" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/uploadpic2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/changepic.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3068">
@@ -843,17 +863,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daniusay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8502">
-          <caret line="327" column="9" selection-start-line="327" selection-start-column="9" selection-end-line="327" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/ajaxfileupload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-519">
+        <state relative-caret-position="2132">
           <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
           <folding />
         </state>
@@ -861,16 +873,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
+        <state relative-caret-position="8580">
           <caret line="330" column="1" selection-start-line="330" selection-start-column="1" selection-end-line="330" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daniusay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7592">
+          <caret line="292" column="27" selection-start-line="292" selection-start-column="27" selection-end-line="292" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13208">
+          <caret line="508" column="34" selection-start-line="508" selection-start-column="34" selection-end-line="508" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1472462947966" expanded="true" signature="2368:2584" ph="..." />
+            <marker date="1472462947966" expanded="true" signature="26510:26525" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit_publish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19318">
+          <caret line="743" column="0" selection-start-line="743" selection-start-column="0" selection-end-line="743" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/uploadpic2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17550">
+          <caret line="675" column="23" selection-start-line="675" selection-start-column="23" selection-end-line="675" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7618">
-          <caret line="293" column="17" selection-start-line="293" selection-start-column="17" selection-end-line="293" selection-end-column="17" />
+        <state relative-caret-position="530">
+          <caret line="304" column="16" selection-start-line="304" selection-start-column="16" selection-end-line="304" selection-end-column="16" />
           <folding />
         </state>
       </provider>
