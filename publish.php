@@ -144,6 +144,7 @@
 					<ul class="dropdown-menu dropdown-menu--join" style="display:none;width:410px;padding-bottom:0;top:39px;border: none;box-shadow: 0 0px 12px rgba(0,0,0,.175);">
 						<li class="am-dropdown-header"><span>本月有征文比赛，您可以参与。</span></li>
 						<li><span class="radio"><label>  <input type="radio" name="article" value="征文 | 国庆七天乐 电动出行最快乐" aria-label="...">征文 | 国庆七天乐 电动出行最快乐</label></span></li>
+						<li><span class="radio"><label> <input type="radio" name="article" value="征文 | 明确方向，我谈《节能与新能源汽车技术路线图》" aria-label="...">征文 | 明确方向，我谈《节能与新能源汽车技术路线图》</label></span></li>
 						<li><span class="radio"><label>  <input type="radio" name="article" value="不参加" aria-label="...">不参加</label></span></li>
 						<li class="input--hover"><input type="submit" value="确定" style="width:100%; text-align: center;color:#5c5c5c;border:none;padding: 15px 0;font-size:16px;background: #fff;border-top:1px solid rgba(221, 221, 221, 0.21);" onclick="send('http://www.d1ev.com/member/articlenew/add.html',0)"></li>
 					</ul>
@@ -364,6 +365,7 @@
     var editor = new wangEditor('div1');
    
 	editor.config.menus = [
+	    'undo',
         'bold',
         'italic',
         'pindent',
@@ -437,7 +439,7 @@
     
         event.returnValue="已自动保存"+datae+"时的内容";
     }
-    })
+    });
     editor.create();
 	
   //监听滚动 编辑器吸顶	
@@ -458,7 +460,7 @@
 
 
 
-    })
+    });
 	
 </script>
 
@@ -482,24 +484,24 @@
 		$("#ppreview").addClass("active").find("img").attr("src",href);
 		//console.log(e);
 		
-    })
+    });
 
     $("#wrapper").on("mouseleave","li",function(){
 
         $lis=$(this)
         $btn=$lis.find(".file-panel")
         $btn.stop().animate({height: 0});
-		$("#ppreview").removeClass("active")
+		$("#ppreview").removeClass("active");
     })
 	//点击删除icon 删除图片
 	$("#upload").on("click","li .file-panel span",function(){
 		$(this).closest("li").remove();
-		$("#ppreview").fadeOut("fast");
-	})
+		$("#ppreview").removeClass("active");
+	});
 		//点击上传按钮 弹出提示框
 $(function () {
   $('#filePicker').tooltip({trigger:"hover"})
-})
+});
 
 
 </script>
@@ -529,12 +531,12 @@ $(function () {
                 type: 'post',
                 dataType: 'text',
 				progress: function(event){
-					progress(event)
+					progress(event);
 				},
                 success: function (data) {
                     if (data.length > 0)
-						console.log(data)
-                        uploadSuccess(data)
+						console.log(data);
+                        uploadSuccess(data);
                 }
 				
             };
@@ -555,10 +557,10 @@ $(function () {
                 '<p class="imgWrap"></p>'+
                 
                 '</li>' ),
-				$btns = $('<div class="file-panel">' + '<span class="cancel">删除</span>').appendTo( $li )
-				$img.appendTo($li.find( 'p.imgWrap' ))
+				$btns = $('<div class="file-panel">' + '<span class="cancel">删除</span>').appendTo( $li );
+				$img.appendTo($li.find( 'p.imgWrap' ));
                 $li.appendTo($("#wrapper"));
-				console.log($("#wrapper"))
+				console.log($("#wrapper"));
             }
         }
 		    var progress = function(event) {
@@ -603,7 +605,7 @@ $(function () {
                     a.find(".about").addClass("upload--position");
                 } else
                     a.find(".about").removeClass("upload--position");
-            })
+            });
         }
     //点击图片 添加到编辑器
     var content=undefined;
@@ -618,20 +620,20 @@ $(function () {
 			$(this).toggleClass("selected")
             var src=$(this).attr("src")
             var $content='<img src="' + src + '" style="max-width:100%;"/>'
-
+			$(this).closest("li").append("<span class='glyphicon glyphicon-ok'></span>");
             content=$content
             Callback(content);
 			
 			
 
-        })
+        });
 
     }(content,callback,editor.command));
 	//须知点击不消失
 	$(".dropdown-menu--re").click(function(){
 
 	 return false
-	})
+	});
 	//点击 弹窗不消失 点击document 弹窗消失
   
         $(function(){   
@@ -653,7 +655,7 @@ $(function () {
                 $(".dropdown-menu--join").hide();    
                    
             });    
-        })  
+        });
 
 </script>
 
@@ -689,7 +691,7 @@ $(function () {
 		
         if(__GLBAL__ARTICLE_ID__!=undefined) {
             obj.id = __GLBAL__ARTICLE_ID__;
-        }
+        };
 		if(type===0){obj.submitType = '0';}		//console.log(obj)
         $.ajax({
             type: "POST",
@@ -741,7 +743,7 @@ $(function () {
 		
         send(address,1);
 
-    })
+    });
 	 function autosave(e){
        var address2="http://www.d1ev.com/member/articlenew/add.html?ajax=1"
 
@@ -771,7 +773,7 @@ $(function () {
 		
 		if(getmsg.imglist){
 			for( var i=0;i<getmsg.imglist.length;i++){
-			  addimglist(getmsg.imglist[i])
+			  addimglist(getmsg.imglist[i]);
 
 			}
 		}
@@ -779,8 +781,8 @@ $(function () {
 		
 	}
 	$(".alert-default").on("click",".load",function(){
-					getdata(getmsg)
-					$(".alert-default").fadeOut()
+					getdata(getmsg);
+					$(".alert-default").fadeOut();
 				})
 	$(".alert-default").on("click",".getup",function(){
 		$.ajax({
@@ -792,14 +794,14 @@ $(function () {
 	})
     function addimglist(res){
 
-        var $img=$("<img src="+ res['url'] +" data-aid="+ res['aid'] +">")
+        var $img=$("<img src="+ res['url'] +" data-aid="+ res['aid'] +">");
         var $li = $( '<li class="img-item">' +
 
                         '<p class="imgWrap"></p>'+
 
                         '</li>' ),
-                $btns = $('<div class="file-panel">' + '<span class="cancel">删除</span>').appendTo( $li )
-        $img.appendTo($li.find( 'p.imgWrap' ))
+                $btns = $('<div class="file-panel">' + '<span class="cancel">删除</span>').appendTo( $li );
+        $img.appendTo($li.find( 'p.imgWrap' ));
         $li.appendTo($("#wrapper"));
 
     }

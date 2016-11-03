@@ -118,6 +118,10 @@ ul li{list-style: none;}
 .dropdown-menu--join > li > span{
   padding:0 20px;
 }
+.dropdown-menu--join > li > span label{
+
+}
+
 .dropdown-menu > li > span:focus{
   background: #fbfbfb;
 }
@@ -127,7 +131,7 @@ ul li{list-style: none;}
 .dropdown-menu > li > span:focus input[radio]{
   color:#f60;
 }
-.dropdown-menu > li > span label{font-weight:400;padding: 15px 0 15px 20px;width:100%;cursor:pointer;}
+.dropdown-menu > li > span label{  font-weight:400;padding: 15px 0 15px 20px;width:100%;cursor:pointer;max-width: 370px;overflow: hidden;}
 .dropdown-menu > li > span label:hover.dropdown-menu > li > span{background:#f7f7f7;}
 .bg-warning{
   background: #ff6600;
